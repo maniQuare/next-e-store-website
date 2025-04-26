@@ -8,41 +8,46 @@ const ProductsData = [
   {
     id: 1,
     img: "/coming-center.svg",
-    title: "E Store",
+    title: "Products Titles",
     rating: 5.0,
-    color: "Comming soon...",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     aosDelay: "0",
   },
   {
     id: "",
     img: "/coming-center.svg",
-    title: "Gamming Website",
+    title: "Products Titles",
     rating: 4.5,
-    color: "comming soon.....",
+    description:
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     aosDelay: "200",
   },
   {
     id: 3,
     img: "/coming-center.svg",
-    title: "Goggles",
+    title: "Products Titles",
     rating: 4.7,
-    color: "brown",
+    description:
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     aosDelay: "400",
   },
   {
     id: 4,
     img: "/coming-center.svg",
-    title: "Printed T-Shirt",
+    title: "Products Titles",
     rating: 4.4,
-    color: "Yellow",
+    description:
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     aosDelay: "600",
   },
   {
     id: 5,
     img: "/coming-center.svg",
-    title: "Fashin T-Shirt",
+    title: "Products Titles",
     rating: 4.5,
-    color: "Pink",
+    description:
+    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     aosDelay: "800",
   },
 ];
@@ -81,7 +86,7 @@ export default function OurProducts(){
                 />
                 <div>
                   <h3 className="font-semibold">{data.title}</h3>
-                  <p className="text-sm text-gray-600">{data.color}</p>
+                  <p className="text-sm text-gray-600">{data.description}</p>
                   <div className="flex items-center gap-1">
                     <FaStar className="text-yellow-400" />
                     <span>{data.rating}</span>

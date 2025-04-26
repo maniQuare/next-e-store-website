@@ -7,7 +7,7 @@ import HeroSections from "@/components/HeroSections";
 import OurProducts from "@/components/OurProducts";
 import RecentlyAdded from "@/components/RecentlyAdded";
 import Banner from "@/components/Banner";
-import RegisterNow from "@/components/RegisterNow";
+import NotifiedPoducts from "@/components/NotifiedProducts";
 import MoreDetails from "@/components/MoreDetails";
 
 
@@ -27,7 +27,7 @@ export default function Home() {
       <OurProducts/>
       <RecentlyAdded/>
       <Banner/>
-      <RegisterNow/>
+      <NotifiedPoducts/>
       <MoreDetails/>
     </div>
   );

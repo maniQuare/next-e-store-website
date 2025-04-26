@@ -22,7 +22,7 @@ export default function Home() {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <div className="max-w-auto mx-2">
       <HeroSections/>
       <OurProducts/>
       <RecentlyAdded/>

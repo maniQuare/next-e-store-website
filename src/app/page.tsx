@@ -4,6 +4,12 @@ import AOS from "aos";
 
 
 import HeroSections from "@/components/HeroSections";
+import OurProducts from "@/components/OurProducts";
+import RecentlyAdded from "@/components/RecentlyAdded";
+import Banner from "@/components/Banner";
+import RegisterNow from "@/components/RegisterNow";
+import MoreDetails from "@/components/MoreDetails";
+
 
 export default function Home() {
   React.useEffect(() => {
@@ -18,6 +24,11 @@ export default function Home() {
   return (
     <div>
       <HeroSections/>
+      <OurProducts/>
+      <RecentlyAdded/>
+      <Banner/>
+      <RegisterNow/>
+      <MoreDetails/>
     </div>
   );
 }

@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import AOS from "aos";
-import Navbar from "@/components/Navbar";
+
+
+import HeroSections from "@/components/HeroSections";
 
 export default function Home() {
   React.useEffect(() => {
@@ -15,7 +17,7 @@ export default function Home() {
   }, []);
   return (
     <div>
-      <Navbar />
+      <HeroSections/>
     </div>
   );
 }

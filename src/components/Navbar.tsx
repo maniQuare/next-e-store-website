@@ -42,12 +42,12 @@ export default function Navbar() {
   return (
     <div className={`${styles.navDiv}`}>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-gray-800 border-b-1">
+        <Disclosure as="nav" className="dark:bg-gray-800 border-b-1">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between ">
               <div className="flex items-center">
                 <div className="shrink-0">
-                  <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-left gap-2">
+                  <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-left gap-2 ">
                     <img
                       alt="Your Company"
                       src="/logo.png"

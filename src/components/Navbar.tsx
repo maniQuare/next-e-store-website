@@ -83,7 +83,7 @@ export default function Navbar() {
                   <input
                     type="text"
                     placeholder="search"
-                    className="w-[120px] sm:w-[200px] group-hover:w-[160px] sm:group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-yellow-500 dark:border-gray-500 dark:bg-gray-800  "
+                    className="w-[120px] sm:w-[200px] group-hover:w-[160px] sm:group-hover:w-[300px] transition-all duration-300 rounded-full border px-2 py-1 focus:outline-none focus:border-1 focus:border-yellow-500 border-gray-500 bg-gray-800  "
                   />
                   <IoMdSearch className="text-gray-500 group-hover:text-yellow-500 absolute top-1/2 -translate-y-1/2 right-3" />
                 </div>

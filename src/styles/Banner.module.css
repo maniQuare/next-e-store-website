@@ -1,0 +1,21 @@
+.slider {
+  display: flex;
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+.slide {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.active {
+  opacity: 1;
+}   
+

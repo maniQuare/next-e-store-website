@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <div className={`${styles.navDiv}`}>
       <div className="min-h-full">
-        <Disclosure as="nav" className="dark:bg-gray-800 border-b-1">
+        <Disclosure as="nav" className="bg-[#ADD8E6] dark:bg-gray-800 border-b-1">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between ">
               <div className="flex items-center">

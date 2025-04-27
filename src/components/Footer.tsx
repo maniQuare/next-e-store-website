@@ -123,7 +123,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
-                  <p>+91 8961446163</p>
+                  <p>maniquare@gmail.com</p>
                 </div>
               </div>
             </div>

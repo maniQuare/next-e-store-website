@@ -1,63 +1,55 @@
-"use client"
+"use client";
 import { FaStar } from "react-icons/fa6";
-
-
-
 
 const ProductsData = [
   {
     id: 1,
     img: "/coming-center.svg",
-    title: "Products Titles",
+    title: "Women Ethnic",
     rating: 5.0,
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "lorem ipsum dolor sit amet.",
     aosDelay: "0",
   },
   {
     id: "",
     img: "/coming-center.svg",
-    title: "Products Titles",
+    title: "Women western",
     rating: 4.5,
-    description:
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "lorem ipsum dolor sit amet.",
     aosDelay: "200",
   },
   {
     id: 3,
     img: "/coming-center.svg",
-    title: "Products Titles",
+    title: "Goggles",
     rating: 4.7,
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "lorem ipsum dolor sit amet.",
     aosDelay: "400",
   },
   {
     id: 4,
     img: "/coming-center.svg",
-    title: "Products Titles",
+    title: "Printed T-Shirt",
     rating: 4.4,
-    description:
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "lorem ipsum dolor sit amet.",
     aosDelay: "600",
   },
   {
     id: 5,
     img: "/coming-center.svg",
-    title: "Products Titles",
+    title: "Fashin T-Shirt",
     rating: 4.5,
-    description:
-    "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    description: "lorem ipsum dolor sit amet.",
     aosDelay: "800",
   },
 ];
-export default function OurProducts(){
+export default function OurProducts() {
   return (
     <div className="mt-14 mb-12">
       <div className="container">
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
-          <p data-aos="fade-up" className="text-sm text-primary">
+          <p data-aos="fade-up" className="text-sm text-yellow-500">
             Top Selling Products for you
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
@@ -97,7 +89,7 @@ export default function OurProducts(){
           </div>
           {/* view all button */}
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-gray-700 text-white py-1 px-5 rounded-md">
+            <button className="text-center mt-10 cursor-pointer bg-yellow-500 text-white py-1 px-5 rounded-md">
               View All Button
             </button>
           </div>

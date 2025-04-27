@@ -1,7 +1,5 @@
-"use client"
+"use client";
 
-export default function HeroSections(){
-  return (
-    <div>Hero Sections</div>
-  )
+export default function HeroSections() {
+  return <div>Hero Sections</div>;
 }

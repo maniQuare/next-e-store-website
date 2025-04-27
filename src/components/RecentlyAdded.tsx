@@ -1,44 +1,41 @@
-"use client"
+"use client";
 import { FaStar } from "react-icons/fa";
 import Link from "next/link";
-
 
 const ProductsData = [
   {
     id: 1,
-    img: "/coming-center.svg",
-    title: "Products Titles",
+    img: "/shirt/shirt.png",
+    title: "Casual Wear",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 2,
-    img: "/coming-center.svg",
-    title: "Products Titles",
+    img: "/shirt/shirt2.png",
+    title: "Printed shirt",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     id: 3,
-    img: "/coming-center.svg",
-    title: "Products Titles",
+    img: "/shirt/shirt3.png",
+    title: "Women shirt",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
- 
-
 ];
-export default function RecentlyAdded(){
+export default function RecentlyAdded() {
   return (
     <div>
       <div className="mx-4">
         {/* Header section */}
         <div className="text-left mb-24">
-          <p data-aos="fade-up" className="text-sm text-primary">
+          <p data-aos="fade-up" className="text-sm text-yellow-500">
             Top Rated Products for you
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Best CSS Products
+            Best Products
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
@@ -49,9 +46,9 @@ export default function RecentlyAdded(){
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center ">
           {ProductsData.map((data) => (
             <div
-            key={data.id}
+              key={data.id}
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px] "
+              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-yellow-500 hover:text-white relative shadow-xl duration-300 group max-w-[300px] "
             >
               {/* image section */}
               <div className="h-[100px]">
@@ -74,10 +71,7 @@ export default function RecentlyAdded(){
                 <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                   {data.description}
                 </p>
-                <button
-                  className="bg-primary hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-primary"
-                
-                >
+                <button className="bg-yellow-500 hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-yellow-500">
                   Order Now
                 </button>
               </div>
@@ -87,10 +81,10 @@ export default function RecentlyAdded(){
       </div>
       {/* view all button */}
       <Link href={"#"} className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-gray-700 text-white py-1 px-5 rounded-md">
-              View All Button
-            </button>
-          </Link>
+        <button className="text-center mt-10 cursor-pointer bg-yellow-500 text-white py-1 px-5 rounded-md">
+          View All Button
+        </button>
+      </Link>
     </div>
   );
 }

@@ -11,14 +11,12 @@ const introImages = [
   "/women/women2.jpg",
   "/women/women3.jpg",
   "/women/women4.jpg",
- 
 ];
 export default function Banner() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("interval");
       setCurrentSlide((currentValue) => {
         if (currentValue == introImages.length - 1) {
           return 0;
@@ -28,12 +26,10 @@ export default function Banner() {
       });
     }, 3000);
     return () => {
-      console.log("interval clean up");
       clearInterval(interval); // Clean up - Inv
     };
   }, []);
-
-
+  
   return (
     <div className="min-h-[550px] flex justify-center items-center py-12 sm:py-0">
       <div className="container">
@@ -45,10 +41,11 @@ export default function Banner() {
                 return (
                   <img
                     key={"Slide" + index}
-                    className={`${styles.slide} ${currentSlide === index && styles.active} max-w-[500px] h-[350px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)] object-cover `}
+                    className={`${styles.slide} ${
+                      currentSlide === index && styles.active
+                    } max-w-[500px] h-[350px] w-full mx-auto drop-shadow-[-10px_10px_12px_rgba(0,0,0,1)] object-cover `}
                     src={images}
                     alt={"Slide" + index}
-                  
                   />
                 );
               })}

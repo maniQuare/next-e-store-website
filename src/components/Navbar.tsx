@@ -13,6 +13,9 @@ import {
 
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import styles from "@/styles/Navbar.module.css";
+import { FaCartShopping } from "react-icons/fa6";
+import { IoMdSearch } from "react-icons/io";
+
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
@@ -39,20 +42,21 @@ export default function Navbar() {
   return (
     <div className={`${styles.navDiv}`}>
       <div className="min-h-full">
-        <Disclosure as="nav" className="dark:bg-gray-800 border-b-1">
+        <Disclosure as="nav" className="bg-gray-800 border-b-1">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between ">
               <div className="flex items-center">
                 <div className="shrink-0">
-                  <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-center gap-3">
+                  <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-left gap-2">
                     <img
                       alt="Your Company"
                       src="/logo.png"
                       className="size-8"
                     />
-                    Shopsy Now
+                    Shopsy 
                   </h1>
                 </div>
+          
 
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
@@ -74,6 +78,30 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
+                    {/* search bar */}
+          <div className="flex justify-between items-center gap-3 ">
+            <div className="relative group block">
+              <input
+                type="text"
+                placeholder="search"
+                className="w-[120px] sm:w-[200px] group-hover:w-[160px] sm:group-hover:w-[300px] transition-all duration-300 rounded-full border border-gray-300 px-2 py-1 focus:outline-none focus:border-1 focus:border-yellow-500 dark:border-gray-500 dark:bg-gray-800  "
+              />
+              <IoMdSearch className="text-gray-500 group-hover:text-yellow-500 absolute top-1/2 -translate-y-1/2 right-3" />
+            </div>
+
+            {/* order button */}
+            <button
+       
+              className="bg-gradient-to-r from-yellow-500 to-gray-500 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group"
+            >
+              <span className="group-hover:block hidden transition-all duration-200">
+                Order
+              </span>
+              <FaCartShopping className="text-xl text-white drop-shadow-sm cursor-pointer" />
+            </button>
+
+          
+          </div>
               <div className="hidden md:block">
                 <div className="ml-4 flex items-center md:ml-6">
                   <button

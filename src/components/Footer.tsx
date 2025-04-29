@@ -1,13 +1,14 @@
 "use client";
 import Link from "next/link";
-
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaLocationArrow,
-  FaMobileAlt,
-} from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
+import { LuPhoneCall } from "react-icons/lu";
+import { CiFacebook } from "react-icons/ci";
+import { LuTwitter } from "react-icons/lu";
+import { FiYoutube } from "react-icons/fi";
+import { PiTelegramLogo } from "react-icons/pi";
 
 const Banner = "/website/footer-pattern.jpg";
 const BannerImg = {
@@ -60,6 +61,30 @@ export default function Footer() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
               beatae ea recusandae blanditiis veritatis.
             </p>
+            {/* social links */}
+            <div className="flex items-center gap-3 mt-6">
+              <a href="#">
+                <BsWhatsapp className="text-3xl" />
+              </a>
+              <a href="#">
+                <FaInstagram className="text-3xl" />
+              </a>
+              <a href="#">
+                <CiFacebook className="text-4xl" />
+              </a>
+              <a href="#">
+                <FaLinkedin className="text-3xl" />
+              </a>
+              <a href="#">
+                <PiTelegramLogo className="text-3xl" />
+              </a>
+              <a href="#">
+                <FiYoutube className="text-3xl" />
+              </a>
+              <a href="#">
+                <LuTwitter className="text-3xl" />
+              </a>
+            </div>
           </div>
 
           {/* Footer Links */}
@@ -73,10 +98,7 @@ export default function Footer() {
                   {FooterLinks.map((link) => (
                     <Link href={link.link} key={link.title}>
                       {" "}
-                      <li
-                        className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
-                       
-                      >
+                      <li className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200">
                         <span>{link.title}</span>
                       </li>
                     </Link>
@@ -102,29 +124,29 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* social links */}
+            {/* contact-us links */}
 
-            <div>
-              <div className="flex items-center gap-3 mt-6">
-                <a href="#">
-                  <FaInstagram className="text-3xl" />
-                </a>
-                <a href="#">
-                  <FaFacebook className="text-3xl" />
-                </a>
-                <a href="#">
-                  <FaLinkedin className="text-3xl" />
-                </a>
-              </div>
-              <div className="mt-6">
-                <div className="flex items-center gap-3">
-                  <FaLocationArrow />
+            <div className="flex gap-2 items-end mt-4">
+              <div className="py-8 px-4">
+                <a className="flex items-center gap-3">
+                  <CiLocationOn className="text-2xl" />
                   <p>Naihati, West Bengal</p>
-                </div>
-                <div className="flex items-center gap-3 mt-3">
-                  <FaMobileAlt />
+                </a>
+
+                <a
+                  className="flex items-center gap-3 mt-3"
+                  href="mailto:maniquare@gmail.com"
+                >
+                  <MdOutlineMarkEmailRead className="text-2xl" />
                   <p>maniquare@gmail.com</p>
-                </div>
+                </a>
+                <a
+                  className="flex items-center gap-3 mt-3"
+                  href="tel:+910123456789"
+                >
+                  <LuPhoneCall className="text-2xl" />
+                  <p>0123456789</p>
+                </a>
               </div>
             </div>
           </div>

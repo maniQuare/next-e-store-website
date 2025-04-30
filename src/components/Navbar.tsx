@@ -12,6 +12,7 @@ import {
 } from "@headlessui/react";
 
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { IoMdNotificationsOutline } from "react-icons/io";
 import styles from "@/styles/Navbar.module.css";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdSearch } from "react-icons/io";
@@ -42,18 +43,21 @@ export default function Navbar() {
   return (
     <div className={`${styles.navDiv}`}>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-[#BFDAF7] dark:bg-gray-800 border-b-1">
+        <Disclosure
+          as="nav"
+          className="bg-gradient-to-r from-[#48E9F1] to-[#373973]"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between ">
               <div className="flex items-center">
                 <div className="shrink-0">
-                  <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-left gap-2 ">
-                    <img
+                  <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify flex items-left gap-2 text-white ">
+                    {/* <img
                       alt="Your Company"
                       src="/logo.png"
                       className="size-8"
-                    />
-                    Shopsy
+                    /> */}
+                    TechMitra
                   </h1>
                 </div>
 
@@ -67,7 +71,7 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                            : "text-gray-300 hover:bg-[#48E9F1] hover:text-white",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                       >
@@ -83,13 +87,13 @@ export default function Navbar() {
                   <input
                     type="text"
                     placeholder="search"
-                    className="w-[120px] sm:w-[200px] group-hover:w-[160px] sm:group-hover:w-[300px] transition-all duration-300 rounded-full border px-2 py-1 focus:outline-none focus:border-1 focus:border-yellow-500 border-gray-500 dark:bg-gray-800  "
+                    className="w-[120px] sm:w-[200px] group-hover:w-[160px] sm:group-hover:w-[300px] transition-all duration-300 rounded-full border px-2 py-1 focus:outline-none focus:border-1 focus:border-white border-white dark:bg-gray-800 text-white"
                   />
-                  <IoMdSearch className="text-gray-500 group-hover:text-yellow-500 absolute top-1/2 -translate-y-1/2 right-3" />
+                  <IoMdSearch className="text-[#74F8FF] group-hover:text-[#31B9B5] absolute top-1/2 -translate-y-1/2 right-3" />
                 </div>
 
                 {/* order button */}
-                <button className="bg-gradient-to-r from-yellow-500 to-gray-500 transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
+                <button className="bg-gradient-to-r from-[#48E9F1] to-[#373973] transition-all duration-200 text-white  py-1 px-4 rounded-full flex items-center gap-3 group">
                   <span className="group-hover:block hidden transition-all duration-200">
                     Order
                   </span>
@@ -100,11 +104,14 @@ export default function Navbar() {
                 <div className="ml-4 flex items-center md:ml-6">
                   <button
                     type="button"
-                    className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                    className="relative rounded-full bg-gradient-to-r from-[#48E9F1] to-[#373973] p-1 text-white hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#31B9B5] focus:outline-hidden"
                   >
                     <span className="absolute -inset-1.5" />
                     <span className="sr-only">View notifications</span>
-                    <BellIcon aria-hidden="true" className="size-6" />
+                    <IoMdNotificationsOutline
+                      aria-hidden="true"
+                      className="size-6"
+                    />
                   </button>
 
                   {/* Profile dropdown */}
@@ -140,7 +147,7 @@ export default function Navbar() {
               </div>
               <div className="-mr-2 flex md:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md bg-white dark:bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md  dark:bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon
@@ -198,7 +205,10 @@ export default function Navbar() {
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
-                  <BellIcon aria-hidden="true" className="size-6" />
+                  <IoMdNotificationsOutline
+                    aria-hidden="true"
+                    className="size-6"
+                  />
                 </button>
               </div>
               <div className="mt-3 space-y-1 px-2">

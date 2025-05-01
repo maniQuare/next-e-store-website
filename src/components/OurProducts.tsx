@@ -49,10 +49,10 @@ export default function OurProducts() {
       <div className="container">
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
-          <p data-aos="fade-up" className="text-sm text-yellow-500">
+          <p data-aos="fade-up" className="text-sm text-[#31B9B5]">
             Top Selling Products for you
           </p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">
+          <h1 data-aos="fade-up" className="text-3xl font-bold text-[#31B9B5]" >
             Products
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
@@ -89,7 +89,7 @@ export default function OurProducts() {
           </div>
           {/* view all button */}
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-yellow-500 text-white py-1 px-5 rounded-md">
+            <button className="text-center mt-10 cursor-pointer bg-[#31B9B5] text-white py-1 px-5 rounded-md">
               View All Button
             </button>
           </div>

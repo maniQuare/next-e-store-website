@@ -13,8 +13,8 @@ export default function NotifiedProducts(){
   return (
     <div
       data-aos="zoom-in"
-      className="mb-20 bg-gray-100 dark:bg-gray-800 text-white "
-      style={BannerImg}
+      className="bg-gradient-to-r from-[#48E9F1] to-[#373973]"
+      // style={BannerImg}
 
     >
       <div className="container backdrop-blur-sm py-10">

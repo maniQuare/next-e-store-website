@@ -31,11 +31,11 @@ export default function RecentlyAdded() {
       <div className="mx-4">
         {/* Header section */}
         <div className="text-left mb-24">
-          <p data-aos="fade-up" className="text-sm text-yellow-500">
-            Top Rated Products for you
+          <p data-aos="fade-up" className="text-sm text-[#31B9B5]">
+            Top Rated Service for you
           </p>
-          <h1 data-aos="fade-up" className="text-3xl font-bold">
-            Best Products
+          <h1 data-aos="fade-up" className="text-3xl font-bold text-[#31B9B5]">
+            Best Services
           </h1>
           <p data-aos="fade-up" className="text-xs text-gray-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
@@ -48,7 +48,7 @@ export default function RecentlyAdded() {
             <div
               key={data.id}
               data-aos="zoom-in"
-              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-yellow-500 hover:text-white relative shadow-xl duration-300 group max-w-[300px] "
+              className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-[#373973] dark:hover:bg-yellow-500 hover:text-white relative shadow-xl duration-300 group max-w-[300px] "
             >
               {/* image section */}
               <div className="h-[100px]">
@@ -71,7 +71,7 @@ export default function RecentlyAdded() {
                 <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                   {data.description}
                 </p>
-                <button className="bg-yellow-500 hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-yellow-500">
+                <button className="bg-[#74F8FF] hover:scale-105 duration-300 text-white py-1 px-4 rounded-full mt-4 group-hover:bg-white group-hover:text-[#74F8FF]">
                   Order Now
                 </button>
               </div>
@@ -81,7 +81,7 @@ export default function RecentlyAdded() {
       </div>
       {/* view all button */}
       <Link href={"#"} className="flex justify-center">
-        <button className="text-center mt-10 cursor-pointer bg-yellow-500 text-white py-1 px-5 rounded-md">
+        <button className="text-center mt-10 cursor-pointer  bg-[#31B9B5] text-white py-1 px-5 rounded-md">
           View All Button
         </button>
       </Link>

@@ -25,7 +25,7 @@ const user = {
 };
 const navigation = [
   { name: "Dashboard", href: "#", current: false },
-  { name: "Products", href: "#", current: false },
+  { name: "Services", href: "#", current: false },
   { name: "About", href: "#", current: false },
   { name: "Contact", href: "#", current: false },
 ];
@@ -71,7 +71,7 @@ export default function Navbar() {
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-[#48E9F1] hover:text-white",
+                            : "text-white  hover: hover:border-b-1",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
                       >
@@ -174,7 +174,7 @@ export default function Navbar() {
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      : "text-white text-center hover:bg-gray-700 hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium "
                   )}
                 >
@@ -182,7 +182,7 @@ export default function Navbar() {
                 </DisclosureButton>
               ))}
             </div>
-            <div className="border-t border-gray-700 pt-4 pb-3">
+            <div className="border-b border-gray-700 pt-4 pb-3">
               <div className="flex items-center px-5">
                 <div className="shrink-0">
                   <img
@@ -191,17 +191,17 @@ export default function Navbar() {
                     className="size-10 rounded-full"
                   />
                 </div>
-                <div className="ml-3">
+                <div className="ml-3 ">
                   <div className="text-base/5 font-medium text-white">
                     {user.name}
                   </div>
-                  <div className="text-sm font-medium text-gray-400">
+                  <div className="text-sm font-medium text-white">
                     {user.email}
                   </div>
                 </div>
                 <button
                   type="button"
-                  className="relative ml-auto shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                  className="relative ml-auto shrink-0 rounded-full bg-gradient-to-r from-[#48E9F1] to-[#373973] p-1 text-white hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
                 >
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only">View notifications</span>
@@ -211,13 +211,13 @@ export default function Navbar() {
                   />
                 </button>
               </div>
-              <div className="mt-3 space-y-1 px-2">
+              <div className="mt-3 space-y-1 px-2 ">
                 {userNavigation.map((item) => (
                   <DisclosureButton
                     key={item.name}
                     as={Link}
                     href={item.href}
-                    className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white "
+                    className="block rounded-md px-3 py-2 text-base font-medium text-white text-center hover:bg-gray-700 hover:text-white "
                   >
                     {item.name}
                   </DisclosureButton>

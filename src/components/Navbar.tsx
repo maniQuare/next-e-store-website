@@ -27,7 +27,7 @@ const navigation = [
   { name: "Dashboard", href: "#", current: false },
   { name: "Services", href: "#", current: false },
   { name: "Model", href: "#", current: false },
-  { name: "Contact", href: "#", current: false },
+  { name: "Schema", href: "#", current: false },
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#" },
